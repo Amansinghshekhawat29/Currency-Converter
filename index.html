@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="converter-container">
+    <h1>💱 Currency Converter</h1>
+    
+    <div class="input-section">
+      <input type="number" id="amount" placeholder="Enter amount" />
+      
+      <div class="select-group">
+        <select id="fromCurrency"></select>
+        <select id="toCurrency"></select>
+      </div>
+      
+      <button onclick="convertCurrency()">Convert</button>
+    </div>
+
+    <div id="result">💸 Converted amount will appear here</div>
+    <canvas id="rateChart" width="400" height="200"></canvas>
+
+  </div>
+<canvas id="currencyCanvas"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
